@@ -4,4 +4,45 @@
     padding: 0;
 }
 
+:root {
+    --LinearGradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --purple: hsl(278, 94%, 30%);
+}
 
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+  }
+
+  li, button {
+    float: right;
+    margin: 0 1em 0 1em;
+  }
+
+  li {
+    height: 30px;
+    line-height: 30px;
+  }
+
+button {
+    border-radius: 15px;
+    border: var(--purple) 3px solid;
+    padding: 7px 10px;
+    background-color: transparent;
+}
+
+/* Grid style */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
